@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git int to puss </title>
+</head>
+<body>
+    <pre> 
+        check git version type : git --version
+
+
+                   git config = fundamental way 
+
+     1: name and email set 
+                  1:git config --global user.name"Tanvir"
+                  2:git config --global user.email"tanvirprhasan@gmail.com
+                     # jodi list dekhte cai tahole : 
+                       git config --list 
+                     # jodi single dekhte cai tahole 
+                       git config user.name
+                        tanvir 
+                     # jodi list e ja ja set korci oita dekhte cai tahole :
+                       git config --global --list
+                             user.name=tanvir
+                             user.email=tanvirprhasan@gmail.com
+                     # name + email change korle set er moto kore entry dite hobe 
+                        git config --global user.name"Tanvir"
+                        git config --global user.email"tanvirprhasan@gmail.com
+      2: name and email unset 
+                  1:git config --global -- unset user.name       
+        
+                    
+                               git rode map 
+
+
+        <img src="/gitmap.png" alt="git map" style="width:400px;height:200px;">
+                 
+              1: Working Directory 
+                  #1 git add (move right to staging)
+                  #2 git diff (move right to staging)
+                   
+                  
+              2: Staging area
+                  #1 git commit (move right to local repository) 
+                  
+                  #1 git status (check history )
+              3: Local Repository 
+                  #1 git push (move right to remote repository)
+                  #2 git log (check history)
+                  
+
+                  #1 git checkout (move left to working Directory)
+                  #2 git merge (move left to working Directory)
+                  #3 git reset -soft HEAD~1 (move left to staging area)
+                  #4 git reset HEAD (move left to working Directory)
+                  #5 git reset --hard HEAD (move left to vanish)
+                  #6 git log (check history)
+                
+              4: Remote repository
+                  #1 git pull/clone ( github to git to working Directory)
+
+
+    </pre>
+    
+
+
+
+  
+
+
+
+
+</body>
+</html>
