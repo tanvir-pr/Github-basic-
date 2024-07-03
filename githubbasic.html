@@ -63,6 +63,181 @@
 
     </pre>
     
+    <pre>
+        git to github transfer data basic way
+
+  1: open vscode ,open folder ,open file , write data ,open terminal, open git bash 
+  2: git init ( git open hobe)               Working Directory 
+  3: git add .                               Working Directory 
+  4: git commit -m "je topic niye lekhci"    Staging area
+  5: git branch -M main                      Local Repository 
+  6: git remote add origin link              Local Repository 
+  7: git push -u origin main                 Local Repository  
+
+
+
+
+</pre>
+
+<pre>
+          git push korar age all details method
+
+          
+          1: folder create 
+          
+1 : Drive e asa jonno 
+# com = pwd ( Present work Directory) eta bujay ami kothay aci
+
+2 : Drive e ki ki file ace dekhar way 
+# com = ls (sob drive show korbe)
+
+3 : Drive theke Desktop e asar jonno move korte hobe
+# com = cd Desktop
+
+4 : Desktop e ki ki ace oita dekhar jonno 
+# com = ls    
+
+5 : new folder create Desktop e korar jonno
+# com = mkdir new-file
+
+6 : new-file er access nite hole file e dukte hobe
+# com = cd new-file
+
+EXTRA : ebar new-file suru te khali thakbe
+
+# com = ls 
+jodi ls - a diye peli tahole dot dot kicu asbe 
+
+# com = ls -a 
+</pre>
+
+<pre>
+     2+3: git init +git add( git open hobe)               Working Directory 
+
+
+1: git init dile file e kicu thakbe na ,ls dileo thakbe na but ls -a dile git file dekha jabe
+  # com = git init (git initial hoy)
+  # com = ls (no file)
+  # com = ls -a (.git file)
+
+2: new-file folder e new file khulte hole 
+  # com = touch day1.txt (kicu likhe rakha jay)
+
+3: ja lekhci oita kmn obostay ace dekhte hole 
+  # com = git status
+   resilt :    On branch master
+               No commits yet
+   
+               Untracked files:
+               (use "git add <file>..." to include in what will be committed)
+                day1.txt (red)
+               nothing added to commit but untracked files present (use "git add" to track)
+
+4: add process ( add korle staging suru hoy)
+     1 # com = git add -A (sob file Directory and sub Directory ak sathe jabe)
+     2 # com = git add . ( Directory jabe sub Directory jabe na)
+     3 # com = git add filename ( je kono file alada newa jabe)
+
+5: again git status . kon obostay ace dekhar rjonno
+     # com = git status 
+     result :  On branch master
+               No commits yet                      
+               Changes to be committed:
+               (use "git rm --cached <file>..." to unstage)
+                new file:   day1.txt
+
+6: abar kicu lekhle untracked file hoye jabe  . eta unstage obosta .new ki add korci eta dekhte hole
+ # com = git diff
+         result : diff --git a/day1.txt b/day1.txt
+           index e69de29..3b26493 100644
+          --- a/day1.txt
+           +++ b/day1.txt
+          @@ -0,0 +1 @@
+          +kire asoc
+         \ No newline at end of file
+
+  akhon 3 no er moto dekhabe . tarpor 4 er moto add kora lagbe 
+         tarpor 5 er moto commit korar jonno ready 
+   
+eta dekhte hobe  7: modify kore add na korle restore kora jay 
+  # com = git restore day1.txt 
+  
+8: unstage korte hole mane add theke bad dite hole
+  # com = git rm --cached day1.txt
+  result :   On branch master
+
+             No commits yet
+  
+              Untracked files:
+             (use "git add <file>..." to include in what will be committed)
+              day1.txt (red)
+  
+             nothing added to commit but untracked files present (use "git add" to track)
+
+9: abar 4 er moto add kora lagbe tarpor staging hobe 
+
+</pre>
+<pre>
+
+    4:  4: git commit -m "je topic niye lekhci"    Staging area
+    
+    
+1: commit korte hole 
+# com = git commit -m"topic"
+2: commit history 
+# com = git log or git log --oneline
+3: add + local e nite hole mane add + commit korte hole 
+# com = git add . && git commit -m"topic"
+5: uncommit korte hole 
+  1: git reset -- soft HEAD 
+  2: git reset HEAD 
+  3: git reset -- hard HEAD 
+6: single hole git show double hole git show id dewa lage , etate ki ki jog kormu sob dekha jabe 
+com = git show or git show 2453542
+result    
+
+commit d62075b9a5b0956a4f1e83c9b30e4d9148bc9db9 (HEAD -> master)
+Author: tanvir <tanvirprhasan@gmail.com>
+Date:   Wed Jul 3 16:36:50 2024 +0600
+
+    add korci
+
+diff --git a/day1.txt b/day1.txt
+new file mode 100644
+index 0000000..3b26493
+--- /dev/null
++++ b/day1.txt
+@@ -0,0 +1 @@
++kire asoc
+\ No newline at end of file
+
+7: jodi 2+file thake tahole git er head change korar jonno checkout lagbe
+# com = git checkout head  (head er por joto number dimu oita head hoye jabe )
+
+                      
+</pre>
+
+
+<pre>
+            5: git branch -M main                      Local Repository 
+            6: git remote add origin link              Local Repository 
+            7: git push -u origin main                 Local Repository  
+
+
+
+
+  1: git branch change korte hole
+   #com = git branch -M main 
+  2: git remote e nite hole 
+   #com =  git remote add origin link 
+  3: ki name remote e ace dekhar jonno 
+   #com = git remote 
+  4: push korar jonno 
+   # com = git push -u origin main 
+
+         colse 
+</pre>
+
 
 
 
